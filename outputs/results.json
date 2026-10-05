@@ -552,6 +552,19 @@
       "R2",
       "R1"
     ],
+    "top3_equal_weights": [
+      "R2",
+      "R7",
+      "R1"
+    ],
+    "rho_equal_weights": 0.93,
+    "top3_alt_weights": [
+      "R2",
+      "R7",
+      "R1"
+    ],
+    "rho_alt_weights": 1.0,
+    "panel_roles_described": "IT asset management; aviation engineering; consulting data analytics",
     "rank_changes": [
       {
         "id": "R7",

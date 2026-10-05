@@ -85,6 +85,12 @@ df.to_csv(TAB / "t06_fuzzy_fmea.csv", index=False)
 df_all.to_csv(TAB / "t06_fuzzy_fmea_all4_robustness.csv", index=False)
 df_sim.to_csv(TAB / "t06_fuzzy_fmea_simulated_benchmark.csv", index=False)
 
+# Robustness to the weighting scheme: equal weights, and one 15+ expert re-coded as 10-15 years
+df_eq = fmea(R_main, np.ones(len(main_panel)) / len(main_panel))
+_w_alt = main_panel.weight_raw.values.astype(float); _w_alt[np.argmax(_w_alt)] = EXP_W["10–15"]
+df_alt = fmea(R_main, _w_alt / _w_alt.sum())
+rho_eq = spearmanr(df.set_index("id").fuzzy_rank.sort_index(), df_eq.set_index("id").fuzzy_rank.sort_index()).correlation
+rho_alt = spearmanr(df.set_index("id").fuzzy_rank.sort_index(), df_alt.set_index("id").fuzzy_rank.sort_index()).correlation
 cmp_ = df[["id", "fuzzy_rank"]].merge(df_all[["id", "fuzzy_rank"]], on="id", suffixes=("", "_all4")).merge(
        df_sim[["id", "fuzzy_rank"]].rename(columns={"fuzzy_rank": "rank_simulated"}), on="id")
 rho_all = spearmanr(cmp_.fuzzy_rank, cmp_.fuzzy_rank_all4).correlation
@@ -126,6 +132,9 @@ res = dict(n_responses=len(panel), n_used=len(main_panel), excluded=panel[panel.
            top3=df.head(3).id.tolist(), top3_all4=df_all.head(3).id.tolist(), top3_simulated=df_sim.head(3).id.tolist(),
            rho_real_vs_all4=round(rho_all, 2), rho_real_vs_simulated=round(rho_sim, 2), rho_fuzzy_vs_crisp=round(rho_crisp, 2),
            severity_ge7=df[df.S >= 7].id.tolist(),
+           top3_equal_weights=df_eq.head(3).id.tolist(), rho_equal_weights=round(rho_eq, 2),
+           top3_alt_weights=df_alt.head(3).id.tolist(), rho_alt_weights=round(rho_alt, 2),
+           panel_roles_described="IT asset management; aviation engineering; consulting data analytics",
            rank_changes=[dict(id=r.id, simulated=int(r.rank_simulated), real=int(r.fuzzy_rank)) for r in cmp_.itertuples() if r.rank_simulated != r.fuzzy_rank],
            other_risks_text=[str(x) for x in raw.iloc[:, -1].dropna().tolist()])
 save_result("fmea", res)
