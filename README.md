@@ -5,6 +5,8 @@
 Working with AI (WAI) project · Logistics & Warehousing Management, Term V · Executive MBA 2025-27, IIM Ranchi
 **Author:** Himanshu Rai (XW013-25) · **Faculty:** Prof. Krishna Kumar Dadsena
 
+**Live dashboard:** https://codeopsdynamics.github.io/ReLoop-WAI-LWM/dashboard/ReLoop_Control_Tower.html
+
 ---
 
 ## The question
