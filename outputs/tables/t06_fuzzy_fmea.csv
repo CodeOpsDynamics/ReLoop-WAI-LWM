@@ -1,0 +1,11 @@
+id,failure_mode,stage,S,O,D,FRPN_low,FRPN_high,FRPN,crisp_RPN,fuzzy_rank,crisp_rank
+R2,Leakage to informal kabadiwala channel,Collection,7.74,2.85,7.74,50.09190672153635,406.3443072702332,205.2,215.5,1,1
+R7,Return-volume surge (refresh cycle),Planning,6.11,4.33,5.22,30.909465020576125,371.0082304526748,180.1,179.4,2,2
+R1,Data breach: un-wiped drive lost in transit,Collection & transport,7.52,2.41,7.3,30.85185185185185,341.2222222222222,164.2,103.4,3,3
+R4,EPR / Form-6 manifest non-compliance,Documentation,4.41,3.52,4.41,18.999999999999996,195.0274348422496,89.5,68.9,4,7
+R8,Recycler capacity / licence lapse,Recycler,4.63,3.74,3.74,17.543209876543205,187.73251028806578,85.6,93.9,5,4
+R9,Transit damage lowers resale grade,Transport & packaging,4.63,2.85,4.63,14.997256515775035,182.72839506172835,81.9,91.7,6,5
+R10,Commodity price swing on recovered metals,Market,3.74,3.74,3.74,12.703703703703699,161.38408779149515,71.7,81.4,7,6
+R3,Li-ion battery thermal event in truck/hub,Transport & storage,3.52,2.63,5.22,8.314128943758572,163.4362139917695,70.3,62.3,8,8
+R5,Chain-of-custody gap (serial mismatch),Hub receiving,4.63,2.26,3.52,9.825788751714676,121.27160493827157,51.5,55.0,9,9
+R6,Mis-grading destroys recoverable value,Grading,3.74,2.63,2.85,4.119341563786008,107.477366255144,44.0,47.7,10,10

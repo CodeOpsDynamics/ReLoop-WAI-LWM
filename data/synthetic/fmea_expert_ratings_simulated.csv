@@ -1,0 +1,11 @@
+id,failure_mode,S_ratings,O_ratings,D_ratings
+R2,Leakage to informal kabadiwala channel,H/H/VH,M/M/H,H/H/VH
+R5,Chain-of-custody gap (serial mismatch),H/VH/H,H/M/H,M/H/M
+R1,Data breach: un-wiped drive lost in transit,VH/VH/VH,L/M/L,H/VH/H
+R3,Li-ion battery thermal event in truck/hub,VH/H/VH,L/L/M,M/M/H
+R4,EPR / Form-6 manifest non-compliance,H/M/VH,M/L/M,M/M/M
+R6,Mis-grading destroys recoverable value,M/L/L,H/M/M,H/M/H
+R8,Recycler capacity / licence lapse,H/M/H,L/L/M,M/L/M
+R9,Transit damage lowers resale grade,M/L/L,H/M/M,L/L/M
+R7,Return-volume surge (refresh cycle),M/L/L,M/M/M,L/L/M
+R10,Commodity price swing on recovered metals,M/L/M,M/M/M,VL/L/VL

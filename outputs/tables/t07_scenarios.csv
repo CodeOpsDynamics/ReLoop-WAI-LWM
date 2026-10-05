@@ -1,0 +1,5 @@
+scenario,npv_cr,payback_months
+Logistics only (no value uplift),1.54,36.9
+"Conservative (25% uplift, 80% freight)",26.77,12.6
+Base (50% uplift),55.74,6.6
+Full modelled uplift,109.94,3.5

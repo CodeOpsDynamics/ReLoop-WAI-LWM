@@ -1,0 +1,6 @@
+case,hubs,s0_cr,s2_cr,saving_pct
+Freight -30%,"Bengaluru, Pune, Gurugram",5.65,4.05,28.3
+Freight +30%,"Bengaluru, Pune, Gurugram",9.17,4.74,48.3
+Hub fixed cost +30%,"Bengaluru, Pune, Gurugram",7.74,5.23,32.4
+Hub fixed cost -30%,"Bengaluru, Pune, Gurugram",7.08,3.55,49.8
+"Worst case: freight -30%, fixed +30%","Pune, Chennai",5.98,4.59,23.2

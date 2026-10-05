@@ -1,0 +1,5 @@
+expert,role,experience,consent,n_distinct,sd,straight_lined,weight_raw
+P1,Other,5–10,Yes,1,0.0,True,2
+P2,Other,15+,Yes,3,2.84722086720835,False,4
+P3,IT Asset Mgmt,<5,Yes,3,1.2220201853215575,False,1
+P4,Other,15+,Yes,4,1.7074997966487597,False,4

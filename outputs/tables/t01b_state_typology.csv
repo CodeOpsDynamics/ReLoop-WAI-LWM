@@ -1,0 +1,17 @@
+label,segment,MI_internet,CI,UT,gen_share_internet,proc_share,cap_share
+Jharkhand,Processing deserts,0.006,0.008,0.179,0.021,0.0,0.0
+Bihar,Processing deserts,0.0,0.001,0.04,0.058,0.0,0.0
+Odisha,Processing deserts,0.0,0.0,0.0,0.032,0.0,0.0
+Haryana,Processing hubs (net importers),4.593,4.205,0.256,0.033,0.151,0.139
+UP + Uttarakhand,Processing hubs (net importers),3.313,2.591,0.299,0.153,0.508,0.397
+AP + Telangana,Processing hubs (net importers),1.574,1.241,0.297,0.077,0.121,0.095
+Gujarat,Processing hubs (net importers),1.291,1.558,0.194,0.06,0.078,0.094
+Kerala,"Small, saturated",0.233,0.082,0.66,0.044,0.01,0.004
+Maharashtra,Under-fed capacity (net exporters),0.412,0.782,0.123,0.129,0.053,0.101
+Rajasthan,Under-fed capacity (net exporters),0.373,0.836,0.104,0.058,0.022,0.048
+Madhya Pradesh,Under-fed capacity (net exporters),0.239,0.253,0.221,0.055,0.013,0.014
+Karnataka,Under-fed capacity (net exporters),0.23,0.565,0.095,0.071,0.016,0.04
+Tamil Nadu,Under-fed capacity (net exporters),0.211,0.578,0.085,0.078,0.017,0.045
+Chhattisgarh,Under-fed capacity (net exporters),0.181,0.145,0.292,0.02,0.004,0.003
+Punjab,Under-fed capacity (net exporters),0.093,0.382,0.057,0.032,0.003,0.012
+West Bengal,Under-fed capacity (net exporters),0.059,0.096,0.144,0.078,0.005,0.007
